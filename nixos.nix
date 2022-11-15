@@ -56,14 +56,14 @@ in
   # required for zsh autocomplete
   environment.pathsToLink = [ "/share/zsh" ];
 
-  users.users.cor = {
+  users.users.hashwarlock = {
     isNormalUser = true;
-    home = "/home/cor";
+    home = "/home/hashwarlock";
     extraGroups = [ "docker" "wheel" ];
     shell = pkgs.zsh;
-    hashedPassword = "$6$sb3eB/EbsWnfAqzy$szu0h/hbX9/23n5RKE0dwzV8lmq.1Yj2NzI/jYQxJZIbzmY8dpIYRdhUVZgCMnR0CeqrQfgzs6FtPoGUiCqDR0";
+    hashedPassword = "$6$mRozIP8tgDqhvyGs$HY7tFM7T/0oaTcdt8abTdvFlPaI07ooFu7y1o7ZFpjHhHSCZNEKUj57Sv7wdYMGCjyilNGXZeMoLWYDp9Jhcg/";
     openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIYMXAekVupSqJ2gDqJvtehePc+J8J7gZant6C4375H3 cor@pruijs.nl"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ1kROv/ERg+Eun+eaOb4umjDmp7ORQREQFqF5r7QEQG hashwarlock@protonmail.com"
     ];
   };
 }

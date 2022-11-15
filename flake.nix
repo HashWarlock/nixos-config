@@ -1,5 +1,5 @@
 {
-  description = "NixOS systems and tools by cor";
+  description = "NixOS systems and tools by hashwarlock";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/release-22.05";
@@ -32,7 +32,7 @@
   outputs = { self, darwin, nixpkgs, home-manager, flake-utils, ... }@inputs:
     let 
       mkVM = import ./lib/mkvm.nix; 
-      user = "cor";
+      user = "hashwarlock";
       overlays = [];
     in
     {
@@ -91,13 +91,13 @@
           modules = [ 
             ./darwin-configuration.nix 
             home-manager.darwinModules.home-manager {
-              users.users.cor = {
-                name = "cor";
-                home = "/Users/cor";
+              users.users.hashwarlock = {
+                name = "hashwarlock";
+                home = "/Users/hashwarlock";
               };
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.cor = import ./home-darwin.nix;
+              home-manager.users.hashwarlock = import ./home-darwin.nix;
     	        home-manager.extraSpecialArgs = { inherit inputs; };
             }
           ];
