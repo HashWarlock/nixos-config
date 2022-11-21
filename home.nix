@@ -42,6 +42,8 @@ in
     pinentry-curses
     pick-colour-picker
     vscode
+    jetbrains.clion
+    jetbrains.webstorm
     bottom
     tdesktop
     lazygit
