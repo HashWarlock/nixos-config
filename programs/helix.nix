@@ -5,6 +5,7 @@ package: {
     settings = {
       theme = "gruvbox_dark_hard";
       editor = {
+        auto-format = true;
         completion-trigger-len = 0;
         scroll-lines = 1;
         scrolloff = 5;
@@ -15,6 +16,10 @@ package: {
         auto-pairs = false;
         lsp.display-messages = true;
         bufferline = "always";
+        statusline = {
+            left = [ "mode" "spinner" "file-name" ];
+            right = "diagnostics" "position" "total-line-numbers" "file-encoding" ];
+        };
       };
     };
 
@@ -23,8 +28,14 @@ package: {
         name = "rust";
         config = {
           checkOnSave.command = "clippy";
-          cargo.allFeatures = true;
-          procMacro.enable = true;
+          # Do not enable as it will cause errors in Helix.
+          # cargo.allFeatures = true;
+        };
+      }
+      {
+        name = "nix";
+        config = {
+          auto-format = true;
         };
       }
     ];

@@ -48,6 +48,10 @@ in
     tdesktop
     lazygit
     element-desktop
+    translate-shell
+    brave
+    bitwarden
+    lynis
     (writeShellScriptBin "xset-r-fast" ''
       xset r rate 150 40
     '')
