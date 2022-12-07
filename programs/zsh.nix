@@ -23,7 +23,7 @@
       lg = "lazygit";
       pbcopy = "xclip -selection c"; # macOS' pbcopy equivalent
       ls = "exa";
-      hxc = "CARGO_TARGET_DIR=target/rust-analyzer /etc/profiles/per-user/cor/bin/hx"; # speed increase for rust-analyzer
+      hxc = "CARGO_TARGET_DIR=target/rust-analyzer /etc/profiles/per-user/hashwarlock/bin/hx"; # speed increase for rust-analyzer
       nd = "nix develop --command zsh";
     };
     initExtra = ''

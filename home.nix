@@ -42,10 +42,16 @@ in
     pinentry-curses
     pick-colour-picker
     vscode
+    jetbrains.clion
+    jetbrains.webstorm
     bottom
     tdesktop
     lazygit
     element-desktop
+    translate-shell
+    brave
+    bitwarden
+    lynis
     (writeShellScriptBin "xset-r-fast" ''
       xset r rate 150 40
     '')
@@ -160,12 +166,6 @@ in
             version = "1.67.2";
           })
           (createChromiumExtension {
-            # 1password
-            id = "aeblfdkhhhdcdjpifhhbdiojplfjncoa";
-            sha256 = "sha256:0ccvpi88s3c1psb5ipkz4cch89ib6h3g9nw8qbxzwvnzh72qg8rl";
-            version = "2.4.1";
-          })
-          (createChromiumExtension {
             # Empty new tab
             id = "dpjamkmjmigaoobjbekmfgabipmfilij";
             sha256 = "sha256:1fv65lfrh1jh9rz3wq26ri4hzkv9n4j563v1arzwys1f8g015fks";
@@ -223,7 +223,7 @@ in
     package = pkgs-unstable.flameshot;
     settings = {
       General = {
-        savePath = "/home/cor/Screenshots";
+        savePath = "/home/hashwarlock/Screenshots";
         showStartupLaunchMessage = false;
         disabledTrayIcon = true;
         filenamePattern = "%F-%H%M%S";
