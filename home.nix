@@ -46,7 +46,7 @@ in
     tdesktop
     lazygit
     element-desktop
-    bitwarden
+    bitwarden-cli    
     (writeShellScriptBin "xset-r-fast" ''
       xset r rate 150 40
     '')
