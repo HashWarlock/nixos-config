@@ -42,16 +42,11 @@ in
     pinentry-curses
     pick-colour-picker
     vscode
-    jetbrains.clion
-    jetbrains.webstorm
     bottom
     tdesktop
     lazygit
     element-desktop
-    translate-shell
-    brave
     bitwarden
-    lynis
     (writeShellScriptBin "xset-r-fast" ''
       xset r rate 150 40
     '')
