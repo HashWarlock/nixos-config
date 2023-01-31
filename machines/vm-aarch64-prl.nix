@@ -16,14 +16,6 @@
 
   # services.xserver.layout = "mac-backtick-fix";
 
-  # The official parallels guest support does not work currently.
-  # https://github.com/NixOS/nixpkgs/pull/153665
-  disabledModules = [ "virtualisation/parallels-guest.nix" ];
-  hardware.parallels = {
-    enable = true;
-    package = (config.boot.kernelPackages.callPackage ../pkgs/parallels-tools/default.nix { });
-  };
-
   # Interface is this on my M1
   networking.interfaces.enp0s5.useDHCP = true;
 

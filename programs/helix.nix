@@ -3,7 +3,7 @@ package: {
   inherit package;
 
   settings = {
-    theme = "gruvbox_dark_hard";
+    theme = "gruvbox_patched";
     editor = {
       auto-format = true;
       completion-trigger-len = 0;
@@ -22,6 +22,15 @@ package: {
       };
     };
   };
+
+  themes = {
+    gruvbox_patched = {
+      inherits = "gruvbox_dark_hard";
+        diagnostic.error = {
+          fg = "errorfg"; bg = "errorbg"; underline.color = "red";
+        };
+      };
+    };
 
   languages = [
     {
