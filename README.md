@@ -4,7 +4,7 @@ I use NixOS inside of a Parallels VM on a M1 Mac running macOS. In addition to t
 
 ## How to fork this configuration for your own usage
 
-1. Do a project-wide search of my username, `cor` and replace it with `your_username`. Be careful not to replace things that are not my username, such as "core".
+1. Do a project-wide search of my username, `hashwarlock` and replace it with `your_username`.
 2. In `./nixos.nix`, replace the value of `hashedPassword` with one you've generated with `mkpasswd -m sha-512` [See here for more info](https://search.nixos.org/options?channel=22.05&show=users.users.%3Cname%3E.hashedPassword&from=0&size=50&sort=relevance&type=packages&query=users.users.%3Cname%3E.hash).
 3. In `./programs/git.nix`, change `userName` and `extraConfig.github.user` to your GitHub username. Also change `signing.key` to the public GPG key you use for your GitHub account.
 
@@ -70,6 +70,9 @@ I use NixOS inside of a Parallels VM on a M1 Mac running macOS. In addition to t
 
 You now have your VM fully set up! To make changes to the config, just edit the contenst `~/nixos-config`, and run `make switch`
 
+## NixOS on Asus ROG Strix G512LW Laptop
+> TODO: In Progress
+
 --- 
 
-Config is partially based on https://github.com/mitchellh/nixos-config
+Config is partially based on https://github.com/mitchellh/nixos-config and https://github.com/cor/nixos-config
